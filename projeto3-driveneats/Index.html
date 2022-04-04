@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="corpo">
+
+      <div class="topo tela">
+
+        <div class="titulo">
+
+          <div class="nome-app Righteous">DrivenEats</div>
+
+          <div class="tagline Roboto">Sua comida em 6 minutos</div>
+
+        </div>
+
+      </div>
+
+      <div class="centro tela">
+
+        <div class="pratos espaco">
+
+          <div class="texto borda Righteous">Primeiro, seu prato</div>
+
+          <div class="scroll">
+
+            <div class="item tela borda" onclick="selectprato(this)">
+
+              <img src="Imagens/frango_yin_yang 1.png"></img>
+  
+              <p class="nome-item Roboto">Frango Yin Yang</p>
+  
+              <p class="descricao Roboto">Um pouco de batata, um pouco de salada</p>
+  
+              <div>
+
+                <p class="preco Roboto">R$ 14,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+  
+            </div>
+  
+            <div class="item tela borda" onclick="selectprato(this)">
+
+              <img src="Imagens/fried-chicken-fillets.jpg"></img>
+  
+              <p class="nome-item Roboto">Frango Frito</p>
+  
+              <p class="descricao Roboto">Fatias de frango, com acompanhamento</p>
+  
+              <div>
+
+                <p class="preco Roboto">R$ 12,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+  
+            </div>
+  
+            <div class="item tela borda" onclick="selectprato(this)">
+
+              <img src="Imagens/prato completo.jpg"></img>
+  
+              <p class="nome-item Roboto">Refeição Completa</p>
+  
+              <p class="descricao Roboto">Frango, arroz, feijãoe e salada</p>
+  
+              <div>
+
+                <p class="preco Roboto">R$ 16,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+  
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="bebidas espaco">
+
+          <div class="texto borda Righteous">Agora, sua bebida</div>
+
+          <div class="scroll">
+
+            <div class="item tela borda" onclick="selectbebida(this)">
+            
+              <img src="Imagens/coquinha_gelada 1.png"></img>
+  
+              <p class="nome-item Roboto">Coquinha gelada</p>
+  
+              <p class="descricao Roboto">Lata 350ml</p>
+
+              <div>
+
+                <p class="preco Roboto">R$ 4,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>  
+              
+            </div>
+  
+            <div class="item tela borda" onclick="selectbebida(this)">
+            
+              <img src="Imagens/Refri 4-pack.jpg"></img>
+  
+              <p class="nome-item Roboto">Refri Pra Família</p>
+  
+              <p class="descricao Roboto">4x Latas 350ml</p>
+              
+              <div>
+
+                <p class="preco Roboto">R$ 15,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>  
+              
+            </div>
+  
+            <div class="item tela borda" onclick="selectbebida(this)">
+            
+              <img src="Imagens/Refri Genérico.jpg"></img>
+  
+              <p class="nome-item Roboto">Refri Genérico</p>
+  
+              <p class="descricao Roboto">Lata 350ml</p>
+              
+              <div>
+
+                <p class="preco Roboto">R$ 2,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>  
+              
+            </div>
+          
+          </div>
+        
+        </div>
+
+        <div class="sobremesas espaco">
+
+          <div class="texto borda Righteous">Por fim, sua sobremesa</div>
+
+          <div class="scroll">
+
+            <div class="item tela borda" onclick="selectsobremesa(this)">
+            
+              <img src="Imagens/pudim 1.png"></img>
+  
+              <p class="nome-item Roboto">Pudim</p>
+  
+              <p class="descricao Roboto">Apenas pudim</p>
+
+              <div>
+
+                <p class="preco Roboto">R$ 7,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+            
+            </div>
+  
+            <div class="item tela borda" onclick="selectsobremesa(this)">
+            
+              <img src="Imagens/Cookies.jpg"></img>
+  
+              <p class="nome-item Roboto">Cookies</p>
+  
+              <p class="descricao Roboto">Pacotinho de biscoito</p>
+
+              <div>
+
+                <p class="preco Roboto">R$ 4,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+            
+            </div>
+  
+            <div class="item tela borda" onclick="selectsobremesa(this)">
+            
+              <img src="Imagens/bolo-branco.jpg"></img>
+  
+              <p class="nome-item Roboto">Bolo</p>
+  
+              <p class="descricao Roboto">Pra quem não quer pudim</p>
+
+              <div>
+
+                <p class="preco Roboto">R$ 8,90</p>
+
+                <img class="vector" src="Imagens/Vector.png"></img>
+              
+              </div>
+            
+            </div>
+          
+          </div>
+
+        
+        </div>
+
+      </div>
+
+      <div class="base tela">
+
+        <button class="botao Roboto" onclick="finalizarPedido()">Selecione os 3 itens
+          para fechar o pedido</button>
+      </div>
+
+      <div class="confirmacao tela Roboto">
+
+        <p class="confirme">Confirme seu pedido</p>
+
+        <div>
+          <p class="prato pedido"></p>
+          <p class="valor-prato pedido"></p>
+        </div>
+
+        <div>
+          <p class="bebida pedido"></p>
+          <p class="valor-bebida pedido"></p>
+        </div>
+
+        <div>
+          <p class="sobremesa pedido"></p>
+          <p class="valor-sobremesa pedido"></p>
+        </div>
+
+        <div>
+          <p class="total">Total</p>
+          <p class="total valor-total"></p>
+        </div>
+
+        <a class="linkwhats" href=""><button class="terminar" onclick="terminar()">Tudo certo, pode pedir!</button></a>
+
+        <button class="cancelar" onclick="cancelar()">Cancelar</button>
+
+      </div>
+
+    </div>
+
+    <div class="intermediario">
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
